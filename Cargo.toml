@@ -1,0 +1,16 @@
+[package]
+name = "accumulator-benches"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+criterion = "0.5.1"
+fastcrypto = "0.1.8"
+rand = "0.8.5"
+rug = "1.24.1"
+
+[[bench]]
+name = "my_benchmark"
+harness = false # This line tells Cargo not to use the default test harness
